@@ -1,7 +1,7 @@
 services:
   # Service Web
   - type: web
-    name: riskinsure-app
+    name: riskinsure-web
     runtime: node
     plan: free
     buildCommand: npm install && npm run build
