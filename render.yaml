@@ -1,0 +1,13 @@
+services:
+  # Service Web
+  - type: web
+    name: riskinsure-app
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: node dist/server.cjs
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
